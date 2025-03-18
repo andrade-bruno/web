@@ -3,13 +3,13 @@ import { Experiences } from "pages/experiences";
 import { Projects } from "pages/projects";
 import { Home } from "pages/home";
 import { Personal } from "pages/personal";
-import { NavBar } from "components/navbar";
+import { DefaultLayout } from "pages/layout";
 
 export const AllRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<NavBar />}>
+        <Route element={<DefaultLayout />}>
           <Route index element={<Home />} />
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/projects" element={<Projects />} />
