@@ -14,7 +14,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "components": ["./components"],
+      "pages": ["./pages"],
+      "routes": ["./routes"]
+    }
   },
   "include": ["src", "my-app/src/App.tsx", "my-app/src/react-app-env.d.ts"]
 }
