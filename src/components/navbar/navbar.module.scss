@@ -1,0 +1,20 @@
+@use "styles/index" as index;
+@use "styles/colors" as colors;
+
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: index.$navbar-height;
+	gap: 38px;
+	padding: index.$padding;
+	border-bottom: 6px solid colors.$tertiary;
+	z-index: 1000;
+	box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.95);
+	background-color: colors.$light;
+}
